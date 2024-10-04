@@ -1,0 +1,89 @@
+.home-container {
+    position: relative;
+    height: 100vh;  /* Full screen height */
+    display: flex;
+    flex-direction: column; /* Stack the logo vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: black;  /* Black background initially */
+    background-image: none;   /* No background image initially */
+    background-size: cover, cover;  /* Ensure both background images cover the screen */
+    background-position: center, center;  /* Center both background images */
+    background-repeat: no-repeat, no-repeat;  /* Prevent the images from repeating */
+    opacity: 1;               /* The container itself is visible */
+  }
+  
+  .home-header {
+    position: relative;  /* Keep it relative so the logo stays centered */
+    z-index: 10;         /* Keep logo above background */
+    opacity: 0;          /* Initially hidden for the fade-in */
+  }
+  
+  /* Style for the second section */
+  .second-section {
+    height: 100vh;  /* Full screen height */
+    background-image: url('/photos/DSC_9618BLANDWITHFIL.jpg');  /* Second background image */
+    background-size: cover;   /* Ensure the background covers the entire screen */
+    background-position: center;  /* Center the background */
+    background-repeat: no-repeat;  /* Prevent the background from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;  /* Text color */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .second-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .second-section p {
+    font-size: 24px;
+    max-width: 800px;
+  }
+  
+  /* Style for the third section */
+  .third-section {
+    height: 100vh;  /* Full screen height */
+    background-image: url('/photos/houses.jpg');  /* Corrected path */
+    background-size: cover;   /* Ensure the background covers the entire screen */
+    background-position: center;  /* Center the background */
+    background-repeat: no-repeat;  /* Prevent the background from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;  /* Text color */
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .third-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .third-section p {
+    font-size: 24px;
+    max-width: 800px;
+  }
+  .gallery-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;  /* Padding to make the link look like a button */
+    background-color: #007bff;  /* Button background color (blue) */
+    color: #ffffff;  /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;  /* Rounded corners */
+    text-align: center;
+    text-decoration: none;  /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .gallery-button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+  }
